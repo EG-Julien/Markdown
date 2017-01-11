@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title>MarkdownEditor</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <!--[if lt IE 9]>
+          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <div class="markdown">
+            <textarea name="markdown" id="markdown" cols="30" rows="10" class="markdown__content"></textarea>
+            <div class="file">
+                <i class="folder_icons fa fa-folder fa-2x"></i>
+                    <p class="folder_name">MarkdownEditor</p>
+            </div>
+        </div>
+        <div class="preview_side">
+                <div class="row fonts_render">
+                    <div class="grid-m-8">
+                        <label for="fonts">Base Font</label><br>
+                        <select name="fonts" id="fonts">
+                            <option value="Open_Sans">Open Sans, 16px</option>
+                        </select>
+                    </div>
+                    <div class="grid-m-4">
+                        <label for="exports">Export</label><br>
+                        <select name="exports" id="exports">
+                            <option value="html">HTML</option>
+                            <option value="markdown">MD</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="preview">
+
+                </div>
+        </div>
+    </body>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.3.1/jquery.min.js"></script>
+    <script>
+        $("#markdown").html("<div class=\"link\">Je ne sais pas</div>");
+    </script>
+</html>
